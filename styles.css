@@ -147,9 +147,13 @@ button {
   cursor: pointer;
 }
 
+
+
 #histories {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  gap: 20px;
   justify-content: space-around;
 }
 
@@ -190,6 +194,12 @@ button {
   }
 
   .card {
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  #histories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
